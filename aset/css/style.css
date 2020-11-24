@@ -1,0 +1,76 @@
+h1, h2, h3, h4, h5, h6, p{
+	font-family: 'Poppins', sans-serif;
+}
+
+.galleri:hover{
+	box-shadow: 0px 3px 6px gray;
+	transition: 0.3s;
+}
+.card-home{
+	transform: translate(0, 200px);
+	opacity: 0;
+}
+
+.jumbotron-text{
+	transform: translate(100px, 0);
+	opacity: 0;
+}
+
+.botol{
+	transform: translate(200px, 0);
+	opacity: 0;
+}
+.text-kiri{
+	transform: translate(100px, 0);
+	opacity: 0;
+}
+
+.text-bawah{
+	transform: translate(0, 100px);
+	opacity: 0;
+}
+
+.gambar-kanan{
+	transform: translate(-100px, 0);
+	opacity: 0;
+}
+
+.img-sambutan{
+	transform: rotate(100deg);
+	opacity: 0;
+}
+
+.gambar-atas{
+	transform: translate(0, -100px);
+	opacity: 0;
+}
+.text-sambutan-atas{
+	opacity: 0;
+	transform: translate(0, 250px);
+}
+.card-sambutan{
+	opacity: 0;
+	transform: translate(0, 200px);
+}
+
+.galleri{
+	opacity: 0;
+	transform: translate(0, 200px);
+}
+
+.text-testi{
+	opacity: 0;
+	transform: translate(100px, 0);
+}
+
+.text-testi-kiri{
+	opacity: 0;
+	transform: translate(0, 200px);
+}
+
+.muncul{
+	transition: 1s;
+	transform: translate(0, 0);
+	transform: rotate(0);
+	opacity: 1;
+}
