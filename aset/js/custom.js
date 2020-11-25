@@ -1,7 +1,7 @@
  jQuery(document).ready(function($) {
             $("[data-toggle='counter-up']").counterUp({
                 delay: 10,
-                time: 1000
+                time: 2000
             });
         });
 $(document).ready(function(){
@@ -14,7 +14,7 @@ $(document).ready(function(){
 
 		$("html, body").animate({
 			scrollTop : elemenTujuan.offset().top - 50
-		}, 2100, "swing");
+		}, 2100, "easeInOutExpo");
 
 	});
 
@@ -33,11 +33,17 @@ $(document).ready(function(){
 
 	$(window).on("scroll", function(){
 		var ar = $(this).scrollTop();
+
+		if (ar < 400) {
+			$(".top-btn").removeClass("top-btn-muncul");
+		}
 		if (ar > 400) {
 			$(".text-kiri").addClass("muncul");
 			$(".text-bawah").addClass("muncul");
 			$(".gambar-atas").addClass("muncul");
 			$(".gambar-kanan").addClass("muncul");
+
+			$(".top-btn").addClass("top-btn-muncul");
 		}
 
 		if (ar > 1300) {
@@ -56,7 +62,7 @@ $(document).ready(function(){
 
 			
 
-		if (ar > 2000) {
+		if (ar > 2700) {
 			$(".galleri").each(function(i){
 				setTimeout(function(){
 					$(".galleri").eq(i).addClass("muncul");
@@ -64,7 +70,7 @@ $(document).ready(function(){
 			});
 		}
 
-		if (ar > 3000) {
+		if (ar > 3500) {
 				$(".text-testi").addClass("muncul");
 				$(".text-testi-kiri").addClass("muncul");
 		}
