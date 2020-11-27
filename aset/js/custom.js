@@ -5,7 +5,16 @@
             });
         });
 $(document).ready(function(){
-	$('.bd-example-modal-lg').modal('show')
+	// $('.bd-example-modal-lg').modal('show')
+
+	$("[type='checkbox']").on("change", function(){
+		$("#tentang").addClass("bg-dark")
+		$("#tentang").addClass("text-light")
+	})
+	$("[type='checkbox']").on("change", function(){
+		$("#tentang").addClass("bg-light")
+		$("#tentang").addClass("text-dark")
+	})
 
 	$(".page-scroll").on("click", function(){
 		$(".navbar-collapse").collapse("hide");

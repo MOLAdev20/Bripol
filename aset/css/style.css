@@ -13,6 +13,7 @@ h1, h2, h3, h4, h5, h6, p{
 .card-home{
 	transform: translate(0, 200px);
 	opacity: 0;
+	height: 100px
 }
 
 .act-btn{
@@ -48,9 +49,10 @@ h1, h2, h3, h4, h5, h6, p{
 	text-decoration: none;
 	transition: ease all 0.3 s;
 	position: fixed;
-	right: -100px;
+	right: 30px;
 	bottom: 100px;
 	transition: 1s;
+	opacity: 0;
 }
 
 .jumbotron-text{
@@ -59,11 +61,11 @@ h1, h2, h3, h4, h5, h6, p{
 }
 
 .botol{
-	transform: translate(200px, 0);
+	transform: translate(0px, 0);
 	opacity: 0;
 }
 .text-kiri{
-	transform: translate(100px, 0);
+	transform: translate(0, 20px);
 	opacity: 0;
 }
 
@@ -73,7 +75,7 @@ h1, h2, h3, h4, h5, h6, p{
 }
 
 .gambar-kanan{
-	transform: translate(-100px, 0);
+	transform: translate(0, 20px);
 	opacity: 0;
 }
 
@@ -110,6 +112,7 @@ h1, h2, h3, h4, h5, h6, p{
 	transform: translate(0, 200px);
 }
 
+
 .muncul{
 	transition: 1s;
 	transform: translate(0, 0);
@@ -120,4 +123,11 @@ h1, h2, h3, h4, h5, h6, p{
 	right: 30px;
 	opacity: 1;
 	transition: 1s;
+}
+
+@media screen and (max-width: 1000px){
+	.card-home{
+		visibility: hidden;
+		height: 0pc;
+	}
 }
